@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Read heartwarming success stories from couples who found love through Bhudev Network">
+    <title>Happy Stories - Bhudev Network</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="images/img1.png" alt="Bhudev Network Logo" class="logo">
+                </div>
+
+                <nav>
+                    <ul class="nav">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="happy-stories.html" class="nav-link active">Happy Stories</a></li>
+                        <li><a href="social-media.html" class="nav-link">Social Media</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <div class="hamburger-lines">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section happy-stories-hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Love Stories That Inspire</h1>
+                    <p class="hero-subtitle">Discover heartwarming tales of couples who found their perfect match
+                        through Bhudev Network</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10,000+</span>
+                            <span class="stat-label">Happy Couples</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Success Stories</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years of Service</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-hearts">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-content">
+                    <h2>Browse Success Stories</h2>
+                    <div class="filter-tabs">
+                        <button class="filter-btn active" data-filter="all">All Stories</button>
+                        <button class="filter-btn" data-filter="traditional">Traditional</button>
+                        <button class="filter-btn" data-filter="love-marriage">Love Marriage</button>
+                        <button class="filter-btn" data-filter="intercaste">Intercaste</button>
+                        <button class="filter-btn" data-filter="nri">NRI Stories</button>
+                    </div>
+                    <div class="search-bar-stories">
+                        <input type="text" id="storySearch"
+                            placeholder="Search stories by name, profession, or location...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stories Grid -->
+        <section class="stories-section">
+            <div class="container">
+                <div class="stories-grid" id="storiesGrid">
+
+                    <!-- Story Card 1 -->
+                    <div class="story-card" data-category="traditional">
+                        <div class="story-image">
+                            <img src="images/Abhishek & Drashti.png" alt="Raj & Priya" loading="lazy">
+                            <div class="story-overlay">
+                                <button class="read-story-btn" onclick="openStoryModal('story1')">
+                                    <i class="fas fa-book-open"></i> Read Story
+                                </button>
+                            </div>
+                        </div>
+                        <div class="story-content">
+                            <div class="couple-names">
+                                <h3>Abhishek<span>&</span>Drashti</h3>
+                            </div>
+                            <div class="story-meta">
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra</span>
+                                <span class="profession"><i class="fas fa-briefcase"></i> Engineer & Teacher</span>
+                            </div>
+                            <p class="story-preview">"We found our perfect match through Bhudev Network. The journey
+                                from strangers to soulmates has been magical..."</p>
+                            <div class="story-tags">
+                                <span class="tag">Traditional</span>
+                                <span class="tag">Same Community</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story Card 2 -->
+                    <div class="story-card" data-category="love-marriage">
+                        <div class="story-image">
+                            <img src="images/Archita & Vrit.png" alt=" Archita & Vrit.png" loading="lazy">
+                            <div class="story-overlay">
+                                <button class="read-story-btn" onclick="openStoryModal('story2')">
+                                    <i class="fas fa-book-open"></i> Read Story
+                                </button>
+                            </div>
+                        </div>
+                        <div class="story-content">
+                            <div class="couple-names">
+                                <h3>Amit <span>&</span> Sneha</h3>
+                            </div>
+                            <div class="story-meta">
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</span>
+                                <span class="profession"><i class="fas fa-briefcase"></i> Doctor & Software
+                                    Developer</span>
+                            </div>
+                            <p class="story-preview">"What started as friendship blossomed into beautiful love. Bhudev
+                                Network helped us connect and build a strong foundation..."</p>
+                            <div class="story-tags">
+                                <span class="tag">Love Marriage</span>
+                                <span class="tag">Professional</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story Card 3 -->
+                    <div class="story-card" data-category="intercaste">
+                        <div class="story-image">
+                            <img src="images/Arpit & Ashwini_02 - Copy.jpg" alt="Vikram & Kavya" loading="lazy">
+                            <div class="story-overlay">
+                                <button class="read-story-btn" onclick="openStoryModal('story3')">
+                                    <i class="fas fa-book-open"></i> Read Story
+                                </button>
+                            </div>
+                        </div>
+                        <div class="story-content">
+                            <div class="couple-names">
+                                <h3>Vikram <span>&</span> Kavya</h3>
+                            </div>
+                            <div class="story-meta">
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka</span>
+                                <span class="profession"><i class="fas fa-briefcase"></i> Business & Designer</span>
+                            </div>
+                            <p class="story-preview">"Love knows no boundaries. Our families embraced our union and
+                                today we celebrate our differences as strengths..."</p>
+                            <div class="story-tags">
+                                <span class="tag">Intercaste</span>
+                                <span class="tag">Progressive</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story Card 4 -->
+                    <div class="story-card" data-category="nri">
+                        <div class="story-image">
+                            <img src="images/Darshan & Nidhi.png" alt="Rohit & Meera" loading="lazy">
+                            <div class="story-overlay">
+                                <button class="read-story-btn" onclick="openStoryModal('story4')">
+                                    <i class="fas fa-book-open"></i> Read Story
+                                </button>
+                            </div>
+                        </div>
+                        <div class="story-content">
+                            <div class="couple-names">
+                                <h3>Rohit <span>&</span> Meera</h3>
+                            </div>
+                            <div class="story-meta">
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Toronto, Canada</span>
+                                <span class="profession"><i class="fas fa-briefcase"></i> IT Consultant & Nurse</span>
+                            </div>
+                            <p class="story-preview">"Distance couldn't keep us apart. From virtual meetings to a
+                                beautiful wedding, our love story is truly international..."</p>
+                            <div class="story-tags">
+                                <span class="tag">NRI</span>
+                                <span class="tag">Long Distance</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story Card 5 -->
+                    <div class="story-card" data-category="traditional">
+                        <div class="story-image">
+                            <img src="images/Het Ashit & Abhishek - Copy.png" alt="Arjun & Diya" loading="lazy">
+                            <div class="story-overlay">
+                                <button class="read-story-btn" onclick="openStoryModal('story5')">
+                                    <i class="fas fa-book-open"></i> Read Story
+                                </button>
+                            </div>
+                        </div>
+                        <div class="story-content">
+                            <div class="couple-names">
+                                <h3>Arjun <span>&</span> Diya</h3>
+                            </div>
+                            <div class="story-meta">
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Ahmedabad, Gujarat</span>
+                                <span class="profession"><i class="fas fa-briefcase"></i> Lawyer & Chartered
+                                    Accountant</span>
+                            </div>
+                            <p class="story-preview">"Our families connected through Bhudev Network and we instantly
+                                knew we were meant for each other..."</p>
+                            <div class="story-tags">
+                                <span class="tag">Traditional</span>
+                                <span class="tag">Same City</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story Card 6 -->
+                    <div class="story-card" data-category="love-marriage">
+                        <div class="story-image">
+                            <img src="images/Hima & Chirag.png" alt="Kiran & Ritu" loading="lazy">
+                            <div class="story-overlay">
+                                <button class="read-story-btn" onclick="openStoryModal('story6')">
+                                    <i class="fas fa-book-open"></i> Read Story
+                                </button>
+                            </div>
+                        </div>
+                        <div class="story-content">
+                            <div class="couple-names">
+                                <h3>Kiran <span>&</span> Ritu</h3>
+                            </div>
+                            <div class="story-meta">
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Delhi, India</span>
+                                <span class="profession"><i class="fas fa-briefcase"></i> Marketing & HR
+                                    Executive</span>
+                            </div>
+                            <p class="story-preview">"We chatted for months before meeting. The connection was instant
+                                and our love story began with a simple 'Hello'..."</p>
+                            <div class="story-tags">
+                                <span class="tag">Love Marriage</span>
+                                <span class="tag">Corporate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-section">
+                    <button class="load-more-btn" id="loadMoreBtn">
+                        <i class="fas fa-plus"></i> Load More Stories
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">What Couples Say</h2>
+                <div class="testimonials-slider">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-content">
+                            <p>"Bhudev Network didn't just help us find each other, they helped us find our forever. The
+                                personalized approach and genuine care made all the difference."</p>
+                            <div class="testimonial-author">
+                                <img src="images/testimonial1.jpg" alt="Rahul & Anjali">
+                                <div class="author-info">
+                                    <h4>Rahul & Anjali</h4>
+                                    <span>Married in 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The platform's advanced matching helped us connect despite being in different cities.
+                                Today, we can't imagine life without each other."</p>
+                            <div class="testimonial-author">
+                                <img src="images/testimonial2.jpg" alt="Sagar & Pooja">
+                                <div class="author-info">
+                                    <h4>Sagar & Pooja</h4>
+                                    <span>Married in 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Professional, reliable, and trustworthy. Bhudev Network understood our requirements and
+                                found us the perfect match."</p>
+                            <div class="testimonial-author">
+                                <img src="images/testimonial3.jpg" alt="Nikhil & Shruti">
+                                <div class="author-info">
+                                    <h4>Nikhil & Shruti</h4>
+                                    <span>Married in 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section happy-stories-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Write Your Love Story?</h2>
+                    <p>Join thousands of couples who found their perfect match through Bhudev Network</p>
+                    <div class="cta-buttons">
+                        <a href="index.html" class="btn btn-primary">
+                            <i class="fas fa-heart"></i> Start Your Journey
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i> Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Story Modal -->
+    <div id="storyModal" class="story-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Story Title</h3>
+                <button class="close-modal" onclick="closeStoryModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="modalContent">
+                    <!-- Story content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023 Bhudev Network Charitable Foundation. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="about.html">About Us</a>
+                    <a href="happy-stories.html">Success Stories</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Happy Stories Page Functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            initStoryFilters();
+            initStorySearch();
+            initTestimonialSlider();
+            initScrollAnimations();
+            initFloatingHearts();
+        });
+
+        function initStoryFilters() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const storyCards = document.querySelectorAll('.story-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+
+                    const filter = btn.getAttribute('data-filter');
+                    filterStories(filter);
+                });
+            });
+
+            function filterStories(category) {
+                storyCards.forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                        card.style.animation = 'fadeInUp 0.6s ease forwards';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+        }
+
+        function initStorySearch() {
+            const searchInput = document.getElementById('storySearch');
+            const storyCards = document.querySelectorAll('.story-card');
+
+            searchInput.addEventListener('input', function () {
+                const searchTerm = this.value.toLowerCase();
+
+                storyCards.forEach(card => {
+                    const names = card.querySelector('.couple-names h3').textContent.toLowerCase();
+                    const location = card.querySelector('.location').textContent.toLowerCase();
+                    const profession = card.querySelector('.profession').textContent.toLowerCase();
+                    const preview = card.querySelector('.story-preview').textContent.toLowerCase();
+
+                    if (names.includes(searchTerm) ||
+                        location.includes(searchTerm) ||
+                        profession.includes(searchTerm) ||
+                        preview.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        }
+
+        function initTestimonialSlider() {
+            let currentTestimonial = 0;
+            const testimonials = document.querySelectorAll('.testimonial-card');
+            const dots = document.querySelectorAll('.dot');
+
+            function showTestimonial(index) {
+                testimonials.forEach((testimonial, i) => {
+                    testimonial.classList.toggle('active', i === index);
+                    dots[i].classList.toggle('active', i === index);
+                });
+            }
+
+            // Auto-rotate testimonials
+            setInterval(() => {
+                currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+                showTestimonial(currentTestimonial);
+            }, 5000);
+
+            window.currentSlide = function (index) {
+                currentTestimonial = index - 1;
+                showTestimonial(currentTestimonial);
+            };
+        }
+
+        function initScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe story cards
+            document.querySelectorAll('.story-card').forEach(card => {
+                observer.observe(card);
+            });
+
+            // Observe stats
+            document.querySelectorAll('.stat-item').forEach(stat => {
+                observer.observe(stat);
+            });
+        }
+
+        function initFloatingHearts() {
+            const hearts = document.querySelectorAll('.floating-hearts i');
+            hearts.forEach((heart, index) => {
+                heart.style.animationDelay = `${index * 0.5}s`;
+                heart.style.left = `${Math.random() * 100}%`;
+            });
+        }
+
+        // Modal Functions
+        function openStoryModal(storyId) {
+            const modal = document.getElementById('storyModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalContent = document.getElementById('modalContent');
+
+            // Sample story content - in real implementation, this would come from a database
+            const stories = {
+                story1: {
+                    title: "Raj & Priya - A Traditional Love Story",
+                    content: `
+                        <div class="full-story">
+                            <img src="images/couple1-full.jpg" alt="Raj & Priya Wedding" class="story-hero-image">
+                            <div class="story-details">
+                                <h4>How We Met</h4>
+                                <p>Our families were introduced through Bhudev Network in early 2022. What started as a formal family meeting turned into hours of conversation about our dreams, values, and aspirations.</p>
+                                
+                                <h4>Our Journey</h4>
+                                <p>Over the next few months, we spent time getting to know each other. From long phone calls to family gatherings, every moment brought us closer. We discovered our shared love for classical music and traditional values.</p>
+                                
+                                <h4>The Proposal</h4>
+                                <p>Raj proposed during a family function with both our families present. It was a beautiful moment that honored our traditions while celebrating our love.</p>
+                                
+                                <h4>Wedding Day</h4>
+                                <p>Our wedding was a grand celebration of two families coming together. The ceremonies were filled with joy, laughter, and blessings from everyone who supported our journey.</p>
+                                
+                                <h4>Life Today</h4>
+                                <p>We're grateful to Bhudev Network for bringing our families together. Today, we're building our life together, supporting each other's dreams while staying rooted in our values.</p>
+                                
+                                <div class="story-message">
+                                    <h4>Message to Other Couples</h4>
+                                    <p>"Trust the process and keep an open heart. Your perfect match is waiting for you too!"</p>
+                                </div>
+                            </div>
+                        </div>
+                    `
+                }
+                // Add more stories as needed
+            };
+
+            modalTitle.textContent = stories[storyId]?.title || "Story";
+            modalContent.innerHTML = stories[storyId]?.content || "Story content not available.";
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeStoryModal() {
+            const modal = document.getElementById('storyModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Load more stories
+        document.getElementById('loadMoreBtn').addEventListener('click', function () {
+            // In real implementation, this would load more stories from server
+            this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+            setTimeout(() => {
+                this.innerHTML = '<i class="fas fa-check"></i> All Stories Loaded';
+                this.disabled = true;
+            }, 2000);
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', function (event) {
+            const modal = document.getElementById('storyModal');
+            if (event.target === modal) {
+                closeStoryModal();
+            }
+        });
+    </script>
+</body>
+
+</html>
