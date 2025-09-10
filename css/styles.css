@@ -3547,8 +3547,13 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: stretch;
     gap: 2rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin-top: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .social-stat {
@@ -3558,8 +3563,14 @@ html {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
+    flex: 1;
     min-width: 150px;
+    max-width: 200px;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-stat:hover {
@@ -4219,16 +4230,18 @@ html {
     }
 
     .hero-social-stats {
-        flex-direction: row;
+        flex-direction: row !important;
         justify-content: center;
-        gap: 0.8rem;
+        gap: 1rem;
+        flex-wrap: nowrap;
+        margin-top: 1.5rem;
     }
 
     .social-stat {
         padding: 1rem;
         min-width: 100px;
         flex: 1;
-        max-width: 120px;
+        max-width: none;
     }
 
     .social-stat i {
@@ -4334,13 +4347,15 @@ html {
         flex-direction: row !important;
         justify-content: center;
         gap: 0.5rem;
+        flex-wrap: nowrap;
+        margin-top: 1rem;
     }
 
     .social-stat {
         padding: 0.8rem !important;
-        min-width: 90px;
+        min-width: 80px;
         flex: 1;
-        max-width: 110px;
+        max-width: none;
     }
 
     .social-stat i {
