@@ -808,6 +808,44 @@ html {
     .contact-grid {
         grid-template-columns: 1fr;
     }
+
+    /* About Page Responsive Styles */
+    .about-content {
+        padding: 3rem 0;
+    }
+
+    .about-grid {
+        gap: 2rem;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-text h3 {
+        font-size: 1.3rem;
+        margin: 1.5rem 0 0.8rem;
+    }
+
+    .about-text p {
+        margin-bottom: 1.2rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .about-image {
+        margin-top: 1rem;
+    }
+
+    .about-image .image-placeholder {
+        padding: 2rem;
+        max-width: 350px;
+    }
+
+    .about-image .image-placeholder i {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -833,6 +871,49 @@ html {
 
     .app-card {
         padding: 1.5rem;
+    }
+
+    /* About Page Mobile Styles */
+    .about-content {
+        padding: 2rem 0;
+    }
+
+    .about-grid {
+        gap: 1.5rem;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-text h3 {
+        font-size: 1.2rem;
+        margin: 1.2rem 0 0.6rem;
+    }
+
+    .about-text p {
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .about-image {
+        margin-top: 0.5rem;
+    }
+
+    .about-image .image-placeholder {
+        padding: 1.5rem;
+        max-width: 300px;
+    }
+
+    .about-image .image-placeholder i {
+        font-size: 2.5rem;
+    }
+
+    .about-image .image-placeholder p {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
     }
 }
 
@@ -899,7 +980,7 @@ html {
 }
 
 .page-header h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -914,31 +995,47 @@ html {
 /* About Page Styles */
 .about-content {
     padding: 4rem 0;
+    background: var(--white);
 }
 
 .about-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 4rem;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+}
+
+.about-text {
+    width: 100%;
 }
 
 .about-text h2 {
     font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .about-text h3 {
     font-size: 1.5rem;
     color: var(--primary-color);
     margin: 2rem 0 1rem;
+    font-weight: 600;
 }
 
 .about-text p {
     margin-bottom: 1.5rem;
     line-height: 1.8;
     color: #666;
+    font-size: 1rem;
+}
+
+.about-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 .about-image .image-placeholder {
@@ -947,11 +1044,26 @@ html {
     padding: 3rem;
     text-align: center;
     color: var(--white);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+    max-width: 400px;
+    width: 100%;
+}
+
+.about-image .image-placeholder:hover {
+    transform: translateY(-5px);
 }
 
 .about-image .image-placeholder i {
     font-size: 4rem;
     margin-bottom: 1rem;
+    display: block;
+}
+
+.about-image .image-placeholder p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
 }
 
 .values-section {
