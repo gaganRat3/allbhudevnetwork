@@ -2921,7 +2921,7 @@ html {
 .happy-stories-hero {
     background: linear-gradient(135deg, rgba(234, 113, 131, 0.9), rgba(255, 105, 180, 0.9)),
         url('../images/love-bg.jpg') center/cover;
-    min-height: 80vh;
+    min-height: 50vh;
     position: relative;
     overflow: hidden;
     padding: 80px
@@ -2930,7 +2930,7 @@ html {
 
 .hero-title {
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 650;
     color: var(--white);
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -3601,11 +3601,12 @@ html {
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2rem;
+                margin: 22px;
     }
 
     .hero-subtitle {
         font-size: 0.9rem;
-        padding: 0 1.5rem;
+        padding: 38px 1.5rem;
     }
 
     .filter-content h2 {
