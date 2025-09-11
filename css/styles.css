@@ -68,12 +68,10 @@ html {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.header.scrolled {
-    padding: 0.5rem 0;
-    background: rgba(44, 62, 80, 0.98);
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+header.scrolled {
+  padding: 0.7rem 0;
+  background: linear-gradient(90deg, rgba(90, 96, 228, 1), rgba(122, 61, 204, 1));
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -925,7 +923,7 @@ html {
     }
 
     .header {
-        padding: 0.5rem 0;
+        padding: 16px 0;
     }
 
     .logo {
