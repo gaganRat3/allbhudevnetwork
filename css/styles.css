@@ -2918,7 +2918,7 @@ html {
 
 /* Hero Section for Happy Stories */
 .happy-stories-hero {
-    background: linear-gradient(135deg, rgba(234, 113, 131, 0.9), rgba(255, 105, 180, 0.9)),
+    background: linear-gradient(135deg, rgba(241, 61, 88, 0.9), rgba(255, 105, 180, 0.9)),
         url('../images/love-bg.jpg') center/cover;
     min-height: 50vh;
     position: relative;
