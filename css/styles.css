@@ -1145,7 +1145,7 @@ html {
     color: var(--white);
     box-shadow: var(--shadow);
     transition: transform 0.3s ease;
-    max-width: 400px;
+    /* max-width: 400px; */
     width: 100%;
 }
 
