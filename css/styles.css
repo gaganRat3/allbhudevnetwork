@@ -1,3 +1,23 @@
+/* Responsive footer banner image */
+@media (max-width: 768px) {
+    img[alt="Footer Banner"] {
+        max-width: 100vw;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    img[alt="Footer Banner"] {
+        max-width: 98vw;
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin-bottom: 12px;
+    }
+}
 /* Global Styles */
 * {
     margin: 0;
@@ -1890,7 +1910,7 @@ html {
 
 /* Footer Enhancements */
 .footer-content {
-    display: grid;
+    
     grid-template-columns: 1fr auto auto;
     gap: 2rem;
     align-items: center;
@@ -1904,12 +1924,14 @@ html {
 .footer-text p {
     margin: 0;
     font-size: 0.9rem;
+    text-align: center;
 }
 
 .footer-links {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-links a {
@@ -4607,3 +4629,52 @@ html {
         font-size: 2rem;
     }
 }
+.footer-container .office-box:last-child {
+            padding-left: 28px;
+            /* nudge a bit more so it clears the border */
+        }
+
+        .footer-container .office-box:last-child .office-details,
+        .footer-container .office-box:last-child .office-header {
+            padding-left: 6px;
+            /* micro-adjust inner content */
+        }
+
+        .vadodara-office {
+            background-color: #8ccfee;
+        }
+
+        .amdavad-office {
+            background-color: #f5d418;
+        }
+
+        .maninagar-office {
+            background-color: #e765b5;
+        }
+
+        .office-header {
+            font-weight: bold;
+            font-size: 17px;
+            /* a bit smaller */
+            margin-bottom: 4px;
+            /* tighter */
+            /* tighter */
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        .office-header hr {
+            border: none;
+            border-top: 2px solid white;
+            margin: 3px 0 6px 0;
+            /* tighter */
+            /* reduce whitespace around rule */
+            width: 100%;
+        }
+
+        .office-details {
+            font-size: 13px;
+            text-align: center;
+            line-height: 1.45;
+            /* slightly tighter */
+        }
