@@ -224,13 +224,15 @@
         <section class="faq-section">
             <div class="container">
                 <h2 class="section-title">Frequently Asked Questions</h2>
-                <div class="faq-list">
+                    <div class="faq-list">
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>How do I register for Bhudev Network services?</h3>
-                            <i class="fas fa-chevron-down"></i>
+                            <button type="button" class="faq-toggle" aria-expanded="false" aria-controls="faq1_desc" id="faq1_btn">
+                                <span class="faq-title">How do I register for Bhudev Network services?</span>
+                                <span class="chev" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                            </button>
                         </div>
-                        <div class="faq-answer">
+                        <div class="faq-answer" id="faq1_desc" role="region" aria-labelledby="faq1_btn" hidden>
                             <p>You can register by calling our primary contact number 9081522111 or by visiting our
                                 website. Our team will guide you through the registration process and help you choose
                                 the right app for your needs.</p>
@@ -239,10 +241,12 @@
 
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>Which app should I choose?</h3>
-                            <i class="fas fa-chevron-down"></i>
+                            <button type="button" class="faq-toggle" aria-expanded="false" aria-controls="faq2_desc" id="faq2_btn">
+                                <span class="faq-title">Which app should I choose?</span>
+                                <span class="chev" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                            </button>
                         </div>
-                        <div class="faq-answer">
+                        <div class="faq-answer" id="faq2_desc" role="region" aria-labelledby="faq2_btn" hidden>
                             <p>The choice depends on your preferences: Regional App for local matches, Categorical App
                                 for specific preferences, City App for urban connections, Social App for gradual
                                 relationship building, and NRI App for global connections.</p>
@@ -251,10 +255,12 @@
 
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>How secure is my personal information?</h3>
-                            <i class="fas fa-chevron-down"></i>
+                            <button type="button" class="faq-toggle" aria-expanded="false" aria-controls="faq3_desc" id="faq3_btn">
+                                <span class="faq-title">How secure is my personal information?</span>
+                                <span class="chev" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                            </button>
                         </div>
-                        <div class="faq-answer">
+                        <div class="faq-answer" id="faq3_desc" role="region" aria-labelledby="faq3_btn" hidden>
                             <p>We use advanced encryption and security measures to protect your personal information.
                                 All profiles are verified, and we have strict privacy policies in place to ensure your
                                 data safety.</p>
@@ -263,10 +269,12 @@
 
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>What are your service charges?</h3>
-                            <i class="fas fa-chevron-down"></i>
+                            <button type="button" class="faq-toggle" aria-expanded="false" aria-controls="faq4_desc" id="faq4_btn">
+                                <span class="faq-title">What are your service charges?</span>
+                                <span class="chev" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                            </button>
                         </div>
-                        <div class="faq-answer">
+                        <div class="faq-answer" id="faq4_desc" role="region" aria-labelledby="faq4_btn" hidden>
                             <p>Our service charges vary based on the app and service level you choose. Please contact us
                                 for detailed pricing information. We offer flexible packages to suit different budgets.
                             </p>
@@ -275,10 +283,12 @@
 
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>Do you provide matchmaking assistance?</h3>
-                            <i class="fas fa-chevron-down"></i>
+                            <button type="button" class="faq-toggle" aria-expanded="false" aria-controls="faq5_desc" id="faq5_btn">
+                                <span class="faq-title">Do you provide matchmaking assistance?</span>
+                                <span class="chev" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                            </button>
                         </div>
-                        <div class="faq-answer">
+                        <div class="faq-answer" id="faq5_desc" role="region" aria-labelledby="faq5_btn" hidden>
                             <p>Yes, we provide personalized matchmaking assistance. Our experienced team helps you find
                                 compatible matches based on your preferences, background, and requirements.</p>
                         </div>
@@ -358,26 +368,7 @@
     </div>
 
     <script src="js/main.js"></script>
-    <script>
-        // FAQ Accordion functionality
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const faqItem = question.parentElement;
-                const answer = faqItem.querySelector('.faq-answer');
-                const icon = question.querySelector('i');
-
-                faqItem.classList.toggle('active');
-
-                if (faqItem.classList.contains('active')) {
-                    answer.style.maxHeight = answer.scrollHeight + 'px';
-                    icon.style.transform = 'rotate(180deg)';
-                } else {
-                    answer.style.maxHeight = '0';
-                    icon.style.transform = 'rotate(0deg)';
-                }
-            });
-        });
-    </script>
+    <!-- FAQ behavior is provided by `js/main.js:initFAQAccordion()` and styles are in `css/styles.css` -->
 </body>
 
 </html>
