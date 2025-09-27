@@ -1460,6 +1460,27 @@ header.scrolled {
     .social-posts-grid { grid-template-columns: 1fr; }
 }
 
+/* Desktop card grid polishing: keep mobile intact, improve desktop card layout */
+@media (min-width: 1100px) {
+    .platforms-grid {
+        grid-template-columns: repeat(3, minmax(260px, 1fr));
+        gap: 32px;
+        align-items: start; /* ensure cards align to top */
+    }
+
+    .platform-card {
+        min-height: 340px; /* slightly taller cards on desktop */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* push actions to the bottom */
+        padding: 24px;
+    }
+
+    .platform-actions { flex-direction: row; align-items: center; }
+
+    .platform-qr { margin-top: 14px; }
+}
+
 @media (max-width: 600px) {
     .platforms-grid { grid-template-columns: 1fr; gap:12px; }
     .social-hero { padding-top: calc(var(--header-offset-mobile) + 14px); }
@@ -1708,6 +1729,38 @@ header.scrolled {
 
 .social-link:hover {
     transform: translateY(-5px) scale(1.1);
+}
+
+/* QR code UI for social platform cards */
+.btn-qr {
+    background: #f3f4f6;
+    color: #0b1724;
+    border: 0;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-left: 8px;
+}
+.btn-qr[aria-expanded="true"] { background: #e6eef8; box-shadow: 0 6px 18px rgba(6,22,46,0.08); }
+.platform-qr {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border: 1px solid rgba(255,255,255,0.03);
+}
+.platform-qr .qr-img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .platform-qr .qr-img { width: 100px; height: 100px; }
 }
 
 /* Modern footer enhancements */
