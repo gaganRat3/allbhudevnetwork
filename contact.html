@@ -220,6 +220,79 @@
             </div>
         </section>
 
+        <style>
+            
+            /* Office Hours Section */
+.office-hours {
+    background: #f9fafc;
+    padding: 80px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.office-hours .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.office-hours h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #333;
+    position: relative;
+}
+
+.office-hours h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #6a5acd, #ff7eb3);
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.hours-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.hours-item {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px 25px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.hours-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hours-item h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #6a5acd;
+}
+
+.hours-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.hours-item strong {
+    color: #222;
+    font-weight: 600;
+}
+
+        </style>
+
         <!-- FAQ Section -->
         <section class="faq-section">
             <div class="container">
